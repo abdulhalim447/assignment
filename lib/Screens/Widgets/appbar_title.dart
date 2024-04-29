@@ -7,6 +7,6 @@ Widget appbarTitle(String title) => Text(
           color: Colors.white,
           fontWeight: FontWeight.w600,
           fontSize: 20,
-          fontFamily: "Poppins",
+          fontFamily: "Kalpurush",
           letterSpacing: 0.5),
     );

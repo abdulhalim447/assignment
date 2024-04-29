@@ -7,11 +7,12 @@ import 'package:assignment/Theme/text_theme.dart';
 import 'package:assignment/data/card_data.dart';
 import 'package:flutter/material.dart';
 
-class SelectedAlbum extends StatelessWidget {
-  final int index;
-  final List<Map<String, String>> cards;
 
-  SelectedAlbum({Key? key, required this.index}) : cards = CardData.cards;
+class SelectedAlbum extends StatelessWidget {
+  late int index;
+  late List<Map<String, String>> cards;
+
+  SelectedAlbum({super.key, required this.index}) : cards = CardData.cards;
 
   @override
   Widget build(BuildContext context) {
@@ -38,157 +39,270 @@ class SelectedAlbum extends StatelessWidget {
       body: SafeArea(
         child: OrientationBuilder(
           builder: (BuildContext context, Orientation orientation) {
-            return _buildBody(context, orientation);
+            if (orientation == Orientation.portrait) {
+              return portraitTree(context, orientation);
+            } else {
+              return landscapeTree(context, orientation);
+            }
           },
         ),
       ),
     );
   }
 
-  Widget _buildBody(BuildContext context, Orientation orientation) {
-    if (orientation == Orientation.portrait) {
-      return _buildPortraitBody(context);
-    } else {
-      return _buildLandscapeBody(context);
-    }
-  }
-
-  Widget _buildPortraitBody(BuildContext context) {
+  Widget portraitTree(BuildContext context, Orientation orientation) {
     return SingleChildScrollView(
-      scrollDirection: Axis.vertical,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          _buildImageContainer(context),
-          _buildText(cards[index]["AlbumHeader"]!),
-          _buildText(cards[index]["AlbumDescription"]!),
-          _buildSeeMoreButton(context),
-          _buildSuggestionsTitle(),
-          _buildBottomContainers(context),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildLandscapeBody(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.vertical,
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          _buildImageContainer(context),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+        scrollDirection: Axis.vertical,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.max,
               children: [
-                _buildText(cards[index]["AlbumHeader"]!),
-                _buildText(cards[index]["AlbumDescription"]!),
-                _buildSeeMoreButton(context),
-                _buildSuggestionsTitle(),
-                _buildBottomContainers(context),
+                imageContainer(
+                  cards,
+                  index,
+                  fromHome: false,
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height: 325,
+                  margin: const EdgeInsets.all(10.00),
+                  boxShadow: BoxShadow(
+                    color: Colors.black.withOpacity(0.50),
+                    spreadRadius: 0,
+                    blurRadius: 35,
+                    offset: const Offset(5, 12),
+                    blurStyle: BlurStyle.normal,
+                  ),
+                ),
               ],
             ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildImageContainer(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        imageContainer(
-          cards,
-          index,
-          fromHome: false,
-          width: MediaQuery.of(context).size.width * 0.9,
-          height: 325,
-          margin: const EdgeInsets.all(10.00),
-          boxShadow: BoxShadow(
-            color: Colors.black.withOpacity(0.50),
-            spreadRadius: 0,
-            blurRadius: 35,
-            offset: const Offset(5, 12),
-            blurStyle: BlurStyle.normal,
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildText(String text) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
-      child: Text(
-        text,
-        style: TextThemes.getTextStyle(
-          fontSize: 24,
-          fontFamily: 'Poppins',
-          letterSpacing: 0.5,
-        ),
-      ),
-    );
-  }
-
-  Widget _buildSeeMoreButton(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 15.0),
-      child: SizedBox(
-        width: MediaQuery.of(context).size.width * 0.9,
-        height: 51,
-        child: ElevatedButton(
-          onPressed: () {},
-          style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF2CAB00),
-            foregroundColor: Colors.white,
-            textStyle: TextThemes.getTextStyle(
-              fontSize: 20,
-              fontFamily: "Poppins",
-              letterSpacing: 0.5,
+            Wrap(
+              alignment: WrapAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 30.00, vertical: 10.00),
+                  child: Text(
+                    cards[index]["AlbumHeader"]!,
+                    style: TextThemes.getTextStyle(
+                        fontSize: 24,
+                        fontFamily: 'Kalpurush',
+                        letterSpacing: 0.5),
+                  ),
+                )
+              ],
             ),
-            elevation: 15,
-          ),
-          child: const Text("See More"),
-        ),
-      ),
-    );
+            Wrap(
+              alignment: WrapAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 30.00, vertical: 10.00),
+                  child: Text(
+                    cards[index]["AlbumDescription"]!,
+                    textAlign: TextAlign.start,
+                    style: TextThemes.getTextStyle(
+                        fontFamily: "Kalpurush", letterSpacing: 0.5),
+                  ),
+                )
+              ],
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 15.00),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.9,
+                    height: 51,
+                    child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFF2CAB00),
+                          foregroundColor: Colors.white,
+                          textStyle: TextThemes.getTextStyle(
+                            fontSize: 20,
+                            fontFamily: "Kalpurush",
+                            letterSpacing: 0.5,
+                          ),
+                          elevation: 15,
+                        ),
+                        child: const Text("See More")),
+                  ),
+                )
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30.00),
+                  child: Text(
+                    "Suggestions",
+                    style: TextThemes.getTextStyle(
+                        color: const Color(0xFF2CAB00),
+                        fontSize: 20,
+                        fontFamily: 'Kalpurush',
+                        letterSpacing: 0.5),
+                  ),
+                )
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                bottomContainer(
+                    orientation: orientation,
+                    context: context,
+                    containerLabel: "প্রচণ্ড গরমে অতিষ্ঠ জনজীবন",
+                    containerImage:
+                    "https://www.dailyjanakantha.com/media/imgAll/2024April/hot-weather-2-2404281238.jpg"),
+                bottomContainer(
+                    orientation: orientation,
+                    context: context,
+                    containerLabel: "একটু প্রশান্তির আশায়",
+                    containerImage:
+                    "https://cdn.risingbd.com/media/imgAll/2022March/5-2205151327.jpg"),
+              ],
+            )
+          ],
+        ));
   }
 
-  Widget _buildSuggestionsTitle() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30.0),
-      child: Text(
-        "Suggestions",
-        style: TextThemes.getTextStyle(
-          color: const Color(0xFF2CAB00),
-          fontSize: 20,
-          fontFamily: 'Poppins',
-          letterSpacing: 0.5,
-        ),
-      ),
-    );
-  }
-
-  Widget _buildBottomContainers(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        bottomContainer(
-          orientation: Orientation.portrait,
-          context: context,
-          containerLabel: "Dawn",
-          containerImage:
-          "https://images.pexels.com/photos/1008737/pexels-photo-1008737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        ),
-        bottomContainer(
-          orientation: Orientation.portrait,
-          context: context,
-          containerLabel: "Leaves",
-          containerImage:
-          "https://images.pexels.com/photos/1687341/pexels-photo-1687341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        ),
-      ],
-    );
+  Widget landscapeTree(BuildContext context, Orientation orientation) {
+    return SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: imageContainer(
+                cards,
+                index,
+                fromHome: false,
+                width: MediaQuery.of(context).size.width * 0.35,
+                height: 298,
+                margin: const EdgeInsets.only(top: 15.00, left: 20.00),
+                boxShadow: BoxShadow(
+                  color: Colors.black.withOpacity(0.50),
+                  spreadRadius: 0,
+                  blurRadius: 35,
+                  offset: const Offset(5, 12),
+                  blurStyle: BlurStyle.normal,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Wrap(
+                    alignment: WrapAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 30.00, vertical: 20.00),
+                        child: Text(
+                          cards[index]["AlbumHeader"]!,
+                          style: TextThemes.getTextStyle(
+                              fontSize: 24,
+                              fontFamily: 'Kalpurush',
+                              letterSpacing: 0.5),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Wrap(
+                    alignment: WrapAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 30.00, vertical: 00.00),
+                        child: Text(
+                          cards[index]["AlbumDescription"]!,
+                          textAlign: TextAlign.start,
+                          style: TextThemes.getTextStyle(
+                              fontFamily: "Kalpurush", letterSpacing: 0.5),
+                        ),
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 15.00),
+                        child: SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.45,
+                          height: 51,
+                          child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: const Color(0xFF2CAB00),
+                                foregroundColor: Colors.white,
+                                textStyle: TextThemes.getTextStyle(
+                                    fontSize: 20,
+                                    fontFamily: "Kalpurush",
+                                    letterSpacing: 0.5),
+                                elevation: 15,
+                              ),
+                              child: const Text("See More")),
+                        ),
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding:
+                        const EdgeInsets.only(left: 30.00, bottom: 20.00),
+                        child: Text(
+                          "Suggestions",
+                          style: TextThemes.getTextStyle(
+                              color: const Color(0xFF2CAB00),
+                              fontSize: 20,
+                              fontFamily: 'Kalpurush',
+                              letterSpacing: 0.5),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        bottomContainer(
+                            orientation: orientation,
+                            context: context,
+                            containerLabel: "প্রচণ্ড গরমে অতিষ্ঠ জনজীবন",
+                            containerImage:
+                            "https://www.dailyjanakantha.com/media/imgAll/2024April/hot-weather-2-2404281238.jpg"),
+                        bottomContainer(
+                            orientation: orientation,
+                            context: context,
+                            containerLabel: "একটু প্রশান্তির আশায়",
+                            containerImage:
+                            "https://cdn.risingbd.com/media/imgAll/2022March/5-2205151327.jpg"),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
+        ));
   }
 }

@@ -1,68 +1,68 @@
 class CardData {
   static List<Map<String, String>> cards = [
     {
-      "AlbumName": "Mood",
+      "AlbumName": "তীব্র গরম",
       "AlbumPicture":
-      "https://images.pexels.com/photos/3396659/pexels-photo-3396659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "AlbumHeader": "Mood With Nature",
+      "https://bangla.thedailystar.net/sites/default/files/styles/very_big_1/public/images/2024/04/22/img_20240421_160606.jpg?itok=c8Sd2Luz",
+      "AlbumHeader": "তীব্র গরমে সুস্থ থাকতে করণীয়",
       "AlbumDescription":
-      "Being in nature, or even viewing scenes of nature, reduces anger, fear, and stress and increases pleasant feelings"
+      "এপ্রিল মাসজুড়ে সারাদেশে বয়ে যাচ্ছে তীব্র তাপপ্রবাহ। এই তীব্র গরমে সুস্থ থাকার উপায় সম্পর্কে জানিয়েছেন বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয়ের ইন্টারনাল মেডিসিন বিভাগের সহযোগী অধ্যাপক ডা. আবেদ হোসেন খান। \n\nতীব্র গরমে যেসব শারীরিক সমস্যা হতে পারে । ডা. আবেদ হোসেন বলেন, অসহনীয় গরমে বিপর্যস্ত হয়ে পড়েছে জনজীবন। এ সময় সবচেয়ে বেশি ঝুঁকি হচ্ছে হিট স্ট্রোকের। পরিবারের বয়স্ক, অসুস্থ সদস্য এবং শিশুরা থাকেন সবচেয়ে বেশি ঝুঁকিতে। হিট স্ট্রোকের মূল কারণ পানিশূন্যতা। বয়স্ক, অসুস্থ এবং শিশুরা অনেক সময়ই এটা অনুধাবন করতে পারে না। তাই তাদের দিকে বাড়তি নজর রাখতে হবে। পাশাপাশি, গরমের সঙ্গে পাল্লা দিয়ে বেড়েই চলেছে ডায়রিয়ার প্রকোপ। এ ছাড়াও প্রচণ্ড গরমে জ্বর, কাশি, শ্বাসকষ্টের রোগ, নিউমোনিয়া, পানিবাহিত টাইফয়েড ও জন্ডিস এবং চর্ম রোগ বা ফুসকুাড়র প্রকোপ অনেক বেড়ে যায়।"
     },
     {
-      "AlbumName": "Aesthetic",
+      "AlbumName": "হিট এলার্ট",
       "AlbumPicture":
-      "https://images.pexels.com/photos/4346325/pexels-photo-4346325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "AlbumHeader": "Aesthetic In Everything",
+      "https://ichef.bbci.co.uk/ace/ws/791/cpsprodpb/21bf/live/9ed692d0-0536-11ef-bc39-f5e03d7a72a6.jpg",
+      "AlbumHeader": "‘হিট অ্যালার্ট’ কেন",
       "AlbumDescription":
-      "Every snapshot tells a story of beauty, tranquility, and creativity. Each carefully curated image captures moments of serenity, elegance, and wonder, inviting you to embark on a journey of visual delight."
+      "বাংলাদেশের আবহাওয়া অধিদপ্তর নতুন করে আরো তিনদিনের জন্য ‘হিট অ্যালার্ট’ জারি করেছে। সংস্থাটি বলেছে আজ থেকে শুরু হওয়া এই তিনদিনেও জলীয়বাষ্পের আধিক্যের কারণে মানুষের মধ্যে অস্বস্তি বৃদ্ধি পেতে পারে।আবহাওয়া বিভাগ এ নিয়ে দেশে পঞ্চম বারের মতো ‘হিট অ্যালার্ট’ জারি করলো এবং সবমিলিয়ে টানা আটাশ দিন ধরে বাংলাদেশের বিভিন্ন অঞ্চলের ওপর দিয়ে দাবদাহ বয়ে যাচ্ছে। কয়েকটি এলাকায় তাপমাত্রার নতুন নতুন রেকর্ডও হয়েছে।"
     },
     {
-      "AlbumName": "Animals",
+      "AlbumName": "হিট স্ট্রোক",
       "AlbumPicture":
-      "https://images.pexels.com/photos/2263936/pexels-photo-2263936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "AlbumHeader": "Animal's Story",
+      "https://ichef.bbci.co.uk/ace/ws/792/cpsprodpb/5258/live/10402100-017e-11ef-97f7-e98b193ef1b8.jpg",
+      "AlbumHeader": "হিট স্ট্রোক থেকে বাঁচার উপায় কী?",
       "AlbumDescription":
-      "Each picture tells a unique story, offering glimpses into the lives and habitats of these fascinating beings. Whether you're an avid nature enthusiast, an animal lover, or simply seeking inspiration from the wonders of the natural world, 'Animals' promises to delight and inspire you with its breathtaking images."
+      "প্রচণ্ড গরমের কারণে দেশের অনেক স্থানে হিট স্ট্রোকে আক্রান্ত হয়ে কয়েকজনের মৃত্যুর খবর প্রকাশিত হয়েছে বাংলাদেশের গণমাধ্যমে।\n\nচিকিৎসকরা বলেছেন, এরকম তীব্র গরমের সময় সতর্ক না থাকলে শারীরিক নানা সমস্যার পাশাপাশি হিট স্ট্রোকে মৃত্যুর আশঙ্কা অনেক বেড়ে যায়।"
     },
     {
-      "AlbumName": "City",
+      "AlbumName": "তাপ কমাবে গাছ",
       "AlbumPicture":
-      "https://images.pexels.com/photos/13739807/pexels-photo-13739807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "AlbumHeader": "City's Landscape",
+      "https://ichef.bbci.co.uk/images/ic/976x549/p0htxxb2.jpg",
+      "AlbumHeader": "গরমে যে গাছগুলো কমাতে পারে তাপ",
       "AlbumDescription":
-      "From iconic landmarks to intimate moments, each image tells a unique story, inviting viewers to explore the beauty, complexity, and rhythm of urban environments through a lens of creativity and appreciation for the urban experience."
+      "দুই পাশের গাছের ছায়ায় রাজধানীর অন্য জায়গার তুলনায় মিন্টো রোডের তাপমাত্রা খানিকটা স্বস্তিরই বলা যায়!\n\nতবে এটাকে ঢাকার সাধারণ চিত্র বলার সুযোগ নেই। কারণ গবেষণা বলছে, ২৮ বছরে রাজধানী ঢাকার সবুজ এলাকা কমে দাঁড়িয়েছে মাত্র ৭ শতাংশে।\n\nআর গাছ কমার কারণেই গ্রীষ্মের গরম হয়ে গেছে অসহনীয়- এমন আলোচনাও চলছে সামাজিক মাধ্যমে।\n\nগবেষণাও অবশ্য তেমনটাই বলছে। কৌশলগত বৃক্ষরোপণে তাপমাত্রা কমতে পারে ২ থেকে ৮ ডিগ্রি সেলসিয়াস পর্যন্ত।\n\nকিন্তু সেক্ষেত্রে প্রশ্ন হচ্ছে শহরের জন্য কোন ধরনের গাছ বেশি উপযোগী?\n\nজানার চেষ্টা করেছেন বিবিসির তানহা তাসনিম..."
     },
     {
-      "AlbumName": "Travel",
+      "AlbumName": "তাপ দুর্যোগে করণীয়",
       "AlbumPicture":
-      "https://images.pexels.com/photos/2070485/pexels-photo-2070485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "AlbumHeader": "Travel The World",
+      "https://www.kalbela.com/assets/news_photos/2024/04/28/image_83423_1714296933.webp",
+      "AlbumHeader": "চলমান তাপ দুর্যোগে আমাদের করণীয়",
       "AlbumDescription":
-      "Each track is a vibrant tapestry of sounds, inspired by the sights, sounds, and experiences of our global adventures. From serene landscapes to bustling city streets, 'Travel' invites you to explore new horizons and embrace the transformative power of music. Let it ignite your wanderlust, evoke cherished memories, and inspire future adventures."
+      "প্রথমেই বলে রাখা ভালো, হিট ওয়েভ ও হিট আইল্যান্ড দুটিই কোনো জায়গা বা অঞ্চলের তাপ বৃদ্ধির কারণ কিন্তু সম্পূর্ণ ভিন্ন দুটি বিষয়। তাপ তরঙ্গ (Heat Wave) অস্বাভাবিক উচ্চ তাপমাত্রার বর্ধিত সময়কাল হিসেবে সংজ্ঞায়িত করা হয় যা সাধারণত কয়েক দিন থেকে সপ্তাহ পর্যন্ত স্থায়ী হয়। জলবায়ু পরিবর্তন, এল নিনোসহ বিভিন্ন কারণকে তাপ তরঙ্গ সংঘঠিত হওয়ার জন্য দায়ী করা হয়। বায়ুমণ্ডলে কার্বন ডাই অক্সাইডের (CO2) উচ্চতর ঘনত্ব তাপপ্রবাহ তৈরিতে সহযোগিতা করে। যখন CO2 বায়ুমণ্ডলে তৈরি হয়, তখন শীতকালে যেমন আমরা কম্বল দিয়ে শরীরকে গরম করি ভিতরে গরম আটকে ঠিক সেইভাবে এটি কম্বলের মতো পৃথিবীর তাপকে আটকে ফেলে, যার ফলে পৃথিবীর তাপমাত্রা বেড়ে যায়। এগুলি প্রায়ই উচ্চ আর্দ্রতার সাথে থাকে, যা পরিবেশকে তাপ এবং আর্দ্রতার একটি বিপজ্জনক সংমিশ্রণের দিকে পরিচালিত করে। এর ফলে পরিবেশে বসবাসকারীরা অস্বস্তি, ক্লান্তি, এমনকি হিটস্ট্রোকেরও শিকার হতে পারে। তাপ তরঙ্গ বিশ্বের যে কোনো জায়গায় ঘটতে পারে এবং জলবায়ু পরিবর্তনের কারণে তা আরও ঘন ঘন এবং গুরুতর হয়ে উঠেছে। তাপ তরঙ্গের নেতিবাচক প্রভাব থেকে নিজেদের এবং আমাদের সম্প্রদায়কে রক্ষা করার জন্য প্রয়োজনীয় সতর্কতা অবলম্বন করা এবং সচেতন থাকা অতি গুরুত্বপূর্ণ।"
     },
     {
-      "AlbumName": "Sky",
+      "AlbumName": "স্বয়ংক্রিয় তাপ নিঃসরণ ব্যবস্থা",
       "AlbumPicture":
-      "https://images.pexels.com/photos/2469122/pexels-photo-2469122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "AlbumHeader": "Sky Is The Limit",
+      "https://www.kalbela.com/assets/news_photos/2024/01/28/image-61225.jpg",
+      "AlbumHeader": "মাত্র দুদিনে স্থাপন স্বয়ংক্রিয় তাপ নিঃসরণ ব্যবস্থা",
       "AlbumDescription":
-      "From the tranquil melodies that evoke the serenity of a clear, starlit night to the soaring crescendos that mirror the grandeur of sunsets and storms, Sky takes listeners on a sonic adventure that transcends earthly confines. Through its emotive compositions and evocative arrangements, Sky invites listeners to immerse themselves in the majesty of the celestial realm and discover the profound impact it holds on the human spirit."
+      "মাত্র দুদিনে রূপপুর পারমাণবিক বিদ্যুৎ প্রকল্পের (এনপিপি) দ্বিতীয় ইউনিটে স্বয়ংক্রিয় তাপ নিঃসরণ ব্যবস্থার অন্তর্ভুক্ত ডিফ্লেকটরের অভ্যন্তরীণ ও বহিঃস্থ স্টিল কাঠামো স্থাপন করা হয়েছে। অল্প সময়ে এ-সংক্রান্ত কাজকে একটি রেকর্ড বলছেন সংশ্লিষ্ট কর্মকর্তা। স্বয়ংক্রিয় তাপ নিঃসরণ ব্যবস্থা কোনো মানুষের হস্তক্ষেপ এবং পাওয়ার সোর্স ছাড়াই নিজ থেকে কাজ করতে সক্ষম।"
     },
     {
-      "AlbumName": "Road",
+      "AlbumName": "শরীরের তাপ",
       "AlbumPicture":
-      "https://images.pexels.com/photos/1816823/pexels-photo-1816823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "AlbumHeader": "Road Goes Ever On & On",
+      "https://www.kalbela.com/assets/news_photos/2024/01/22/image-59613.jpg",
+      "AlbumHeader": "জানতেন কি? শরীরের তাপ",
       "AlbumDescription":
-      "Road takes listeners on a profound exploration of life's twists and turns. From the highs of triumph to the lows of heartache, each track reflects the emotional landscape of the human experience. Whether you're cruising down the highway or soul-searching in solitude, Road serves as the perfect soundtrack, resonating with listeners and leaving a lasting impact long after the music fades. It's an album that reminds us that no matter where life takes us, the journey itself is worth cherishing."
+      "শরীরের তাপমাত্রা মেপে মৃত্যুর সময় বের করা যায়। মানুষ মারা যাওয়ার পর প্রতি ঘণ্টায় শরীরের তাপমাত্রা দেড় ডিগ্রি করে কমে।ধূমপানে শরীরের ভেতর গরম ধোঁয়ার প্রবেশের কারণে তাপমাত্রা বেড়ে যায়। ধূমপান থামানোর পরও ২০ মিনিট লাগে শরীর স্বাভাবিক অবস্থায় ফিরতে। এতে করে জরুরি প্রয়োজনে দেহ শীতল হওয়ার স্বয়ংক্রিয় প্রাকৃতিক ব্যবস্থাটি নষ্ট হয়ে যায়।"
     },
     {
-      "AlbumName": "Flower",
+      "AlbumName": "অতিরিক্ত তাপ",
       "AlbumPicture":
-      "https://images.pexels.com/photos/931162/pexels-photo-931162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "AlbumHeader": "Flower- Delicate Beauty ",
+      "https://www.kalbela.com/assets/news_photos/2023/06/24/image-3746-1687615334.jpg",
+      "AlbumHeader": "অতিরিক্ত তাপ মধ্যপ্রাচ্যে প্রবাসীদের মৃত্যু ঝুঁকি বাড়াচ্ছে",
       "AlbumDescription":
-      "Flower transports listeners to a realm where the ephemeral dance of petals mirrors the rhythms of the human heart. With its ethereal soundscape and soul-stirring narratives, Flower invites you to pause, breathe, and immerse yourself in the transformative power of nature's timeless wonders."
+      "অতিরিক্ত তাপ মধ্যপ্রাচ্যে প্রবাসীদের মৃত্যু ঝুঁকি বাড়াচ্ছে। একই সঙ্গে তাপজনিত বিভিন্ন রোগে শরীরের অঙ্গ-প্রত্যঙ্গ ক্ষতিগ্রস্ত হচ্ছে বলে এক গবেষণায় উঠে এসেছে।‘প্রাণঘাতী তাপ : উপসাগরীয় অঞ্চলে অভিবাসী কর্মীদের ওপর চরম তাপমাত্রা এবং জলবায়ু পরিবর্তনের প্রভাব’ শীর্ষক এক প্রতিবেদনে এসব তথ্য জানানো হয়েছে।শনিবার (২৪ জুন) রাজধানীর একটি হোটেলে অভিবাসন খাতের বেসরকারি গবেষণা প্রতিষ্ঠান রিফিউজি অ্যান্ড মাইগ্রেটরি মুভমেন্টস রিসার্চ ইউনিট (রামরু) এ প্রতিবেদন প্রকাশ করেন।"
     }
   ];
 }

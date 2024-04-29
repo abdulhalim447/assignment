@@ -5,7 +5,7 @@ class TextThemes {
       {Color color = Colors.black,
       double fontSize = 15.00,
       var fontWeight = FontWeight.w400,
-      String fontFamily = 'Roboto',
+      String fontFamily = 'Kalpurush',
       double letterSpacing = 0}) {
     return TextStyle(
         color: color,

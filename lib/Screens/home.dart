@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
             child: backIcon(),
           ),
         ),
-        title: appbarTitle("Photo Gallery"),
+        title: appbarTitle("হিট এলার্ট"),
         centerTitle: true,
         actions: [
           popMenu(),
